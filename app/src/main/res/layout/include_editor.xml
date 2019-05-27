@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	
+	<ImageView
+		android:id="@+id/gallery"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		android:src="@drawable/ic_sticker"
+		app:layout_constraintStart_toStartOf="@+id/brush"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<ImageView
+		android:id="@+id/camera"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="8dp"
+		android:src="@drawable/ic_photo_camera"
+		app:layout_constraintStart_toEndOf="@+id/gallery"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<ImageView
+		android:id="@+id/discard"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="8dp"
+		android:src="@drawable/ic_delete"
+		app:layout_constraintStart_toEndOf="@+id/camera"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<ImageView
+		android:id="@+id/addQuote"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="16dp"
+		android:src="@drawable/ic_save"
+		app:layout_constraintEnd_toStartOf="@+id/leftRotate"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<ImageView
+		android:id="@+id/leftRotate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="16dp"
+		android:src="@drawable/ic_rotate_left"
+		app:layout_constraintEnd_toStartOf="@+id/rightRotate"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<ImageView
+		android:id="@+id/rightRotate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="8dp"
+		android:src="@drawable/ic_rotate_right"
+		app:layout_constraintEnd_toEndOf="@+id/emoji"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	
+	
+	<TextView
+		android:id="@+id/brush"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginBottom="8dp"
+		android:drawableTop="@drawable/ic_brush_red"
+		android:fontFamily="sans-serif-condensed"
+		android:padding="10dp"
+		android:text="Brush"
+		android:textColor="@color/colorBlack"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/textEditor"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/gallery" />
+	
+	<TextView
+		android:id="@+id/textEditor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="8dp"
+		android:drawableTop="@drawable/ic_text"
+		android:fontFamily="sans-serif-condensed"
+		android:padding="10dp"
+		android:text="Text"
+		android:textColor="@color/colorBlack"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/eraser"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/brush" />
+	
+	<TextView
+		android:id="@+id/eraser"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="8dp"
+		android:drawableTop="@drawable/ic_eraser"
+		android:fontFamily="sans-serif-condensed"
+		android:padding="10dp"
+		android:text="Eraser"
+		android:textColor="@color/colorBlack"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/sticker"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textEditor" />
+	
+	<TextView
+		android:id="@+id/sticker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="8dp"
+		android:drawableTop="@drawable/ic_sticker"
+		android:fontFamily="sans-serif-condensed"
+		android:padding="10dp"
+		android:text="Sticker"
+		android:textColor="@color/colorBlack"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/emoji"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/eraser" />
+	
+	<TextView
+		android:id="@+id/emoji"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginBottom="8dp"
+		android:drawableTop="@drawable/ic_emoticon"
+		android:fontFamily="sans-serif-condensed"
+		android:padding="10dp"
+		android:text="Emoji"
+		android:textColor="@color/colorBlack"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/sticker" />
+</android.support.constraint.ConstraintLayout>

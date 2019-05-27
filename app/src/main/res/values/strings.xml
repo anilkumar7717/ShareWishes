@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WiShift</string>
+    <string name="title_home">Home</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="title_design">Designs</string>
+    <string name="like">Like</string>
+    <string name="no_data">No Data Found</string>
+    <string name="developer_key">AIzaSyBWqdI0XlrA9-Fuyjqp4lADiseB_UXGfcI</string>
+    <string name="category">Category</string>
+</resources>
