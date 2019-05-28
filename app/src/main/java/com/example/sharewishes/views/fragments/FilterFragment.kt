@@ -34,7 +34,7 @@ class FilterFragment : Fragment(), IFireBaseCategoryCallBack, ICategoryRecyclerV
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        rv_contents.layoutManager = LinearLayoutManager(context)
+        rv_contents.layoutManager = LinearLayoutManager(activity)
         categoryData = mutableListOf()
         queryData = mutableListOf()
         categoryAdapter = CategoryAdapter(categoryData, this)
@@ -84,6 +84,7 @@ class FilterFragment : Fragment(), IFireBaseCategoryCallBack, ICategoryRecyclerV
             }
         }
     }
+
 
 }
 

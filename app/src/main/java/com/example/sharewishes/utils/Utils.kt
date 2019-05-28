@@ -74,7 +74,5 @@ object Utils {
         } else {
             if (activity != null) Toast.makeText(activity, message, Toast.LENGTH_SHORT).show()
         }
-
-
     }
 }
